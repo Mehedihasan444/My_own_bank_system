@@ -1,0 +1,42 @@
+<!DOCTYPE html >
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank System</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-7xl mx-auto space-y-5">
+    <h1 class="text-5xl font-bold mb-5 text-center my-10">Bank System!!!!</h1>
+    <section class="grid grid-cols-3 gap-x-5">
+        <div class="bg-violet-500 rounded-lg text-center text-white p-10">
+            <h1 class="text-5xl font-semibold mb-5">Deposit</h1>
+            <h1 class="text-5xl font-semibold">$<span id="d-balance">00</span></h1>
+        </div>
+        <div class="bg-green-500 rounded-lg text-center text-white p-10">
+            <h1 class="text-5xl font-semibold mb-5">Withdraw</h1>
+            <h1 class="text-5xl font-semibold">$<span id="w-balance">00</span></h1>
+        </div>
+        <div class="bg-blue-500 rounded-lg text-center text-white p-10">
+            <h1 class="text-5xl font-semibold mb-5">Balance</h1>
+            <h1 class="text-5xl font-semibold">$<span id="main-balance">1670</span></h1>
+        </div>
+    </section>
+    <section class="grid grid-cols-2 gap-x-5">
+        <div class="bg-red-500 rounded-lg  text-white p-10">
+            <h1 class="text-5xl font-semibold mb-5">You Deposit</h1>
+            <input type="text" id="d-input" class="px-5 py-3 text-black rounded-lg w-[70%] block" placeholder="The amount you want to deposit">
+            <button class="btn btn-primary mt-5" id="btn-deposit">Deposit</button>
+        </div>
+        <div class="bg-lime-500 rounded-lg  text-white p-10">
+            <h1 class="text-5xl font-semibold mb-5">Your Withdraw</h1>
+            <input type="text" id="w-input" class="px-5 text-black py-3 rounded-lg w-[70%] block" placeholder="The amount you want to withdraw">
+            <button class="btn btn-primary mt-5" id="btn-withdraw">Withdraw</button>
+        </div>
+    </section>
+    <script src="js/utilities.js"></script>
+    <script src="js/deposit.js"></script>
+    <script src="js/withdraw.js"></script>
+</body>
+</html>
